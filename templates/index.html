@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link href="{{ url_for('static',filename='circliful/css/jquery.circliful.css') }}" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{{ url_for('static',filename='circliful/js/jquery.circliful.min.js') }}"></script>
+    <script src= "{{ url_for('static',filename='script.js') }}"></script>
+    <title>CryptoData</title>
+</head>
+<body>
+<div class="main">
+<form method="post" id="ajaxform">
+    <div class="container">
+        <div class="row">
+    <div class="col-sm-4 form-group ">
+            <label >Topic</label>
+            <div>
+                <select  class="form-control" onchange="load_autors()" id="theme" >
+                    <option value="" selected>Choose topic</option>
+                </select>
+            </div>
+    </div>
+            <div class="space col-sm-4 form-group "></div>
+        <div class="col-sm-4 form-group">
+            <label>Author</label>
+            <div>
+                <select  class="form-control  row=5 col=6" onchange="showCircle()" id="author" >
+                    <option value="" selected>Choose author</option>
+                </select>
+            </div>
+        </div>
+        </div>
+    </div>
+</form>
+</div>
+<div class="data">
+    <div class="row">
+    <div class="tbl col-sm-4">
+        <table class="table">
+      <thead>
+        <tr>
+          <th>№ </th>
+          <th>Nickname</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    </div>
+        <div class="col-sm-4"></div>
+
+    <div class="col-sm-4">
+        <div id="test-circle"></div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>

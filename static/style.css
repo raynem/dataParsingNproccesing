@@ -1,0 +1,44 @@
+.main{
+    width: 100%;
+
+    margin-top: 50px;
+}
+
+body {
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+	"Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+	font-size:16px;
+	color:#444;
+	}
+.form-group{
+    width: 300px;
+}
+
+.container{
+    width: 100%;
+}
+
+.form-group select{
+    width: 100%
+}
+
+.my_selects select{
+    width: 150px;
+
+}
+
+.tbl {
+    margin-top: 50px;
+    width: 50%;
+    display: none;
+}
+
+.data{
+    margin-left: 13%;
+    margin-right: 15%;
+}
+
+#test-circle {
+    margin-top 0%;
+    display: none;
+}
